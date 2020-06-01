@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+
+    <!-- Required meta tags. Allows us to add new information to our html page, and there's different things that we can provide. In most websites you always see these two lines. viewport allows us to create pages that are created mobile first, and allows for touching zooming etc. utf-8 encoding is to write text on the pages.-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!--We use d-flex to align the items vertically etc.-->
+    <!--If you look at developer tools, the container is only a part of the page at which the elements are aligning centrally. So we need to tell the container to span the entirety of the page. Do this by adding a class of height 100 "h-100".-->
+    <div class="container d-flex align-items-center h-100">
+      <div class="row">
+        <!--Col-12 is used so that bootstrap can align it using its 12 column grid to cover the entire area, otherwise it may not align it centrally.-->
+        <header class="text-center col-12">
+          <h1 class="text-uppercase"><strong>The Biggest Startup Event of the year</strong></h1>
+        </header>
+        <!--The buffer acts as a separation between the header and the horizontal line and button.-->
+        <div class="buffer col-12"></div>
+        <section class="text-center col-12">
+          <hr>
+          <a href="https://mailchi.mp/35ce41597624/startupztm">
+            <button class="btn btn-primary btn-xl">Find out more</button> 
+          </a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
